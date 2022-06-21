@@ -1,0 +1,30 @@
+.gnb {
+  padding: 2rem;
+  background-color: #2f3954;
+  color: #fff;
+}
+.gnb h1 {
+  margin-bottom: 2rem;
+}
+.gnb h1 a {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+.gnb h1 a:hover {
+  color: #acf2ff;
+}
+.gnb ul li {
+  margin-bottom: 1.2rem;
+}
+.gnb ul li:last-child {
+  margin-bottom: 0;
+}
+.gnb ul li a {
+  color: #fff;
+  font-size: 1.1rem;
+}
+.gnb ul li span {
+  font-size: 1.1rem;
+  margin-right: 1rem;
+}

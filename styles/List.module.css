@@ -1,0 +1,20 @@
+.scroll_list {
+  max-height: 83%;
+  overflow-y: auto;
+}
+/* one list */
+.book_grid_1 li {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 1.2rem;
+}
+
+.book_grid_1 li .img {
+  width: 20%;
+}
+.book_grid_1_info {
+  padding-left: 1.5rem;
+  width: 80%;
+}
+/* list */
