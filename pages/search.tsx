@@ -1,7 +1,12 @@
 import type { NextPage } from "next";
-import { Typography } from "antd";
+
+import { Typography, Modal } from "antd";
 const { Title, Paragraph } = Typography;
 import { Button, Form, Input, message, Space } from "antd";
+import ListStyle from "../styles/List.module.css";
+
+import BookOneList from "../components/list/BookOneList";
+import BookInfoModal from "../components/view/BookInfoModal";
 
 const Search: NextPage = () => {
   return (
@@ -35,6 +40,9 @@ const Search: NextPage = () => {
           </Space>
         </Form.Item>
       </Form>
+      <div className={ListStyle.scroll_list_small}>
+        <BookOneList />
+      </div>
     </>
   );
 };

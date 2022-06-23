@@ -8,7 +8,7 @@ const BestSeller: NextPage = () => {
   return (
     <>
       <Title level={3}>Best Seller</Title>
-      <Paragraph>You can check the list of popular books.</Paragraph>
+      <Paragraph>Click on the list to see more information.</Paragraph>
       <div className={ListStyle.scroll_list}>
         <BookOneList />
       </div>
