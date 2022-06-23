@@ -6,7 +6,7 @@ const { Title } = Typography;
 
 interface propsType {
   visible: boolean;
-  onCancel: any;
+  onCancel(): boolean;
 }
 
 const BookOneList = (props: propsType) => {
