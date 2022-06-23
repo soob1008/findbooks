@@ -1,6 +1,6 @@
 # FindBooks
 
-네이버 책 api를 이용한 도서 검색 웹
+도서 검색 api를 이용한 도서 검색 웹
 
 ## Stack
 typescript, next.js
