@@ -6,8 +6,6 @@ import ListStyle from "../styles/List.module.css";
 import key from "./api/config";
 
 const NewBooks: NextPage = (books) => {
-  console.log(books);
-
   return (
     <>
       <Title level={3}>New Book</Title>
@@ -20,7 +18,7 @@ const NewBooks: NextPage = (books) => {
 };
 
 export const getServerSideProps = async () => {
-  const bestSellerUrl = `http://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=${key.ttbKey}&QueryType=ItemNewAll&MaxResults=10&start=1&SearchTarget=Book&output=js&Version=20131101`;
+  const bestSellerUrl = `http://www.aladin.co.kr/ttb/api/ItemList.aspx?ttbkey=ttb1008sb2140001&QueryType=ItemNewAll&MaxResults=10&start=1&SearchTarget=Book&output=js&Version=20131101`;
 
   const res = await fetch(bestSellerUrl);
   const books = await res.json();
