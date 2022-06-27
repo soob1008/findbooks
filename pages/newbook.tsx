@@ -3,7 +3,6 @@ import { Typography } from "antd";
 const { Title, Paragraph } = Typography;
 import BookOneList from "../components/list/BookOneList";
 import ListStyle from "../styles/List.module.css";
-import key from "./api/config";
 
 const NewBooks: NextPage = (books) => {
   return (
