@@ -1,8 +1,9 @@
 # FindBooks
 
-도서 검색 api를 이용한 도서 검색 웹
+알라딘 도서 api를 이용한 도서 검색 웹
 
 ## Stack
+
 typescript, next.js
 
 ## 기능

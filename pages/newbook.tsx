@@ -7,6 +7,7 @@ import key from "./api/config";
 
 const NewBooks: NextPage = (books) => {
   console.log(books);
+
   return (
     <>
       <Title level={3}>New Book</Title>
