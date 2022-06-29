@@ -4,15 +4,15 @@ import ListStyle from "../../styles/List.module.css";
 import { Typography, Modal } from "antd";
 import { Row, Col, List } from "antd";
 const { Title } = Typography;
-
+import { BooksType } from "../../pages/newbook";
 import BookInfoModal from "../view/BookInfoModal";
 
-const BookOneList = () => {
+const BookOneList = (books: BooksType) => {
   const [modal, setModal] = useState<boolean>(false);
   const onClickHandler = () => {
     setModal(true);
   };
-
+  console.log(books);
   return (
     <>
       <List itemLayout="vertical" className={ListStyle.book_grid_1}>

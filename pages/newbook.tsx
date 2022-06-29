@@ -4,13 +4,17 @@ const { Title, Paragraph } = Typography;
 import BookOneList from "../components/list/BookOneList";
 import ListStyle from "../styles/List.module.css";
 
-const NewBooks: NextPage = (books) => {
+export interface BooksType {
+  books: { item: [] };
+}
+
+const NewBooks = (books: BooksType) => {
   return (
     <>
       <Title level={3}>New Book</Title>
       <Paragraph>Click on the list to see more information.</Paragraph>
       <div className={ListStyle.scroll_list}>
-        <BookOneList />
+        <BookOneList books={books} />
       </div>
     </>
   );
